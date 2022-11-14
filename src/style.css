@@ -1,11 +1,17 @@
+@-webkit-keyframes appear {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes appear {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 :root {
   font-size: 62.5%;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -17,6 +23,9 @@ body {
 }
 body * {
   font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 header {
@@ -33,5 +42,37 @@ header h1 {
 .card {
   width: 33rem;
   height: 46rem;
-  background-image: url(./assets/explorer-card.svg);
+  cursor: pointer;
+  background-image: url(./assets/ignite-card.svg);
+  opacity: 0;
+  transform: translateY(-10rem);
+  -webkit-animation: appear 0.4s forwards;
+          animation: appear 0.4s forwards;
+}
+.card > img {
+  width: 15rem;
+  height: 15rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #f7dd43;
+  margin: 11.5rem 0 0 8.5rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.card .info {
+  margin-top: 7rem;
+  color: #fff;
+  margin-left: 4.75rem;
+  text-align: left;
+}
+.card .info h2 {
+  font-size: 1.8rem;
+  line-height: 140%;
+}
+.card .info p {
+  font-size: 1.4rem;
+  line-height: 160%;
 }/*# sourceMappingURL=style.css.map */
