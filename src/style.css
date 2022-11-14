@@ -1,0 +1,37 @@
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: hsl(113deg, 52%, 24%);
+  height: 100vh;
+}
+body * {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  text-align: center;
+}
+header h1 {
+  padding-top: 3rem;
+  text-transform: uppercase;
+  color: yellow;
+  font-size: 3.25rem;
+  font-weight: 900;
+}
+
+.card {
+  width: 33rem;
+  height: 46rem;
+  background-image: url(./assets/explorer-card.svg);
+}/*# sourceMappingURL=style.css.map */

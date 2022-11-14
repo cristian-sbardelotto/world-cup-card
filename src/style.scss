@@ -1,0 +1,46 @@
+@mixin reset {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  @include reset();
+}
+
+body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  background: hsl(113, 52%, 24%);
+  height: 100vh;
+
+  * {
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+header {
+  text-align: center;
+
+  h1 {
+    padding-top: 3rem;
+    text-transform: uppercase;
+    color: yellow;
+    font-size: 3.25rem;
+
+    font-weight: 900;
+  }
+}
+
+.card {
+  width: 33rem;
+  height: 46rem;
+
+  background-image: url(./assets/explorer-card.svg);
+}
