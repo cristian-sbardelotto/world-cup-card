@@ -1,0 +1,14 @@
+{
+  "name": "carta-da-copa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/cristian-sbardelotto/carta-da-copa",
+  "author": "Cristian Sbardelotto <cristian.k.sbardelotto@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "yarn live-server src/"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
